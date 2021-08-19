@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>가상 클래스 선택자</title>
+    <!--:link - 방문한 적이 없는 링크
+        :visited - 방문한 적이 있는 링크 *visited는 보안상 이유로 일부 속성만 사용가능*
+        :hover - 마우스를 롤오버 했을 때
+        :active - 마우스를 클릭했을 때
+        두개가 동급이면 뒤쪽에 있는 선언을 선택함-->
+    <style>
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a:focus {
+            color: wheat;
+        }
+
+        input:focus {
+            background-color: black;
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://naver.com">방문함</a>
+    <a href="https://a.a">방문 안함</a>
+    <br>
+    <input type="text">
+</body>
+
+</html>
