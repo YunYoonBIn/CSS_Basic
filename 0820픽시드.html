@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent,
+        #other {
+            border: 5px solid tomato;
+        }
+
+        #large {
+            height: 10000px;
+            background-color: tomato;
+        }
+     /* fixed = 고정된 화면 */
+        #me {
+            background-color: black;
+            color: wheat;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>
+
+</body>
+
+</html>
